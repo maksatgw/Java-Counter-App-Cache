@@ -66,5 +66,8 @@ public class MainActivity extends AppCompatActivity {
         String scount = String.valueOf(count);
         textView.setText(scount);
         sharedPreferences.edit().putInt("storedData", count).apply();
+        //3[3][2] Küçük bir Toast mesajı.
+        Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+        
     }
 }
